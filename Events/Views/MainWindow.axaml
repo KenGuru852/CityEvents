@@ -1,0 +1,410 @@
+<Window xmlns="https://github.com/avaloniaui"
+		xmlns:srv="using:Tachyon.Services"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Events.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:localM="clr-namespace:Events.Models"
+		mc:Ignorable="d" d:DesignWidth="1400" d:DesignHeight="800"
+		Height="800"
+		Width="1000"
+        x:Class="Events.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ProgressControl" CanResize="True">
+        
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<Window.Resources>
+		<vm:BitmapAssetValueConverter x:Key="variableImage"/>
+	</Window.Resources>
+
+	<!--	<Window.DataTemplates>
+			<DataTemplate DataType="{x:Type localM:CityEvent}">
+					<Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="300" RowDefinitions="100, 100">
+						<Image VerticalAlignment="Center" Grid.Row="0" HorizontalAlignment="Center" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+						<StackPanel Spacing="10" Grid.Row="1">
+							<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+								<TextBlock TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+							</Border>
+							<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+								<TextBlock TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Date}"/>
+							</Border>
+							<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+								<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+							</Border>
+							<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+								<TextBlock TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Price}"/>
+							</Border>
+						</StackPanel>
+					</Grid>
+			</DataTemplate>
+	</Window.DataTemplates>
+	-->
+	<ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+		<TabControl>
+			<TabItem>
+				<TabItem.Header>
+					<Grid ColumnDefinitions="40, 150">
+						<Image Grid.Column="0" Width="40" Height="40" Source="/Assets/for_kids.png"></Image>
+						<TextBlock TextAlignment="Center" Grid.Column="1">
+							Для детей
+						</TextBlock>
+					</Grid>
+				</TabItem.Header>
+				<ItemsControl Items="{Binding For_Kids}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type localM:CityEvent}">
+							<Grid Margin="75" Width="400" Height="300" RowDefinitions="100, 100">
+								<Image Grid.Row="0" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+								<StackPanel Grid.Row="1">
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Date}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Price}"/>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</TabItem>
+			<TabItem>
+				<TabItem.Header>
+					<Grid ColumnDefinitions="40, 150">
+						<Image Grid.Column="0" Width="40" Height="40" Source="/Assets/sport.png"></Image>
+						<TextBlock TextAlignment="Center" Grid.Column="1">
+							Спорт
+						</TextBlock>
+					</Grid>
+				</TabItem.Header>
+				<ItemsControl Items="{Binding Sport}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type localM:CityEvent}">
+							<Grid Margin="75" Width="400" Height="300" RowDefinitions="100, 100">
+								<Image Grid.Row="0" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+								<StackPanel Grid.Row="1">
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Date}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Price}"/>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</TabItem>
+			<TabItem>
+				<TabItem.Header>
+					<Grid ColumnDefinitions="40, 150">
+						<Image Grid.Column="0" Width="40" Height="40" Source="/Assets/culture.png"></Image>
+						<TextBlock TextAlignment="Center" Grid.Column="1">
+							Культура
+						</TextBlock>
+					</Grid>
+				</TabItem.Header>
+				<ItemsControl Items="{Binding Culture}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type localM:CityEvent}">
+							<Grid Margin="75" Width="400" Height="300" RowDefinitions="100, 100">
+								<Image Grid.Row="0" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+								<StackPanel Grid.Row="1">
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Date}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Price}"/>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</TabItem>
+			<TabItem>
+				<TabItem.Header>
+					<Grid ColumnDefinitions="40, 150">
+						<Image Grid.Column="0" Width="40" Height="40" Source="/Assets/adventures.png"></Image>
+						<TextBlock TextAlignment="Center" Grid.Column="1">
+							Экскурсии
+						</TextBlock>
+					</Grid>
+				</TabItem.Header>
+				<ItemsControl Items="{Binding Adventures}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type localM:CityEvent}">
+							<Grid Margin="75" Width="400" Height="300" RowDefinitions="100, 100">
+								<Image Grid.Row="0" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+								<StackPanel Grid.Row="1">
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Date}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Price}"/>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</TabItem>
+			<TabItem>
+				<TabItem.Header>
+					<Grid ColumnDefinitions="40, 150">
+						<Image Grid.Column="0" Width="40" Height="40" Source="/Assets/life_hobby.png"></Image>
+						<TextBlock TextAlignment="Center" Grid.Column="1">
+							Образ жизни
+						</TextBlock>
+					</Grid>
+				</TabItem.Header>
+				<ItemsControl Items="{Binding Life_Hobby}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type localM:CityEvent}">
+							<Grid Margin="75" Width="400" Height="300" RowDefinitions="100, 100">
+								<Image Grid.Row="0" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+								<StackPanel Grid.Row="1">
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Date}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Price}"/>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</TabItem>
+			<TabItem>
+				<TabItem.Header>
+					<Grid ColumnDefinitions="40, 150">
+						<Image Grid.Column="0" Width="40" Height="40" Source="/Assets/tusa.png"></Image>
+						<TextBlock TextAlignment="Center" Grid.Column="1">
+							Вечеринки
+						</TextBlock>
+					</Grid>
+				</TabItem.Header>
+				<ItemsControl Items="{Binding Tusa}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type localM:CityEvent}">
+							<Grid Margin="75" Width="400" Height="300" RowDefinitions="100, 100">
+								<Image Grid.Row="0" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+								<StackPanel Grid.Row="1">
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Date}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Price}"/>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</TabItem>
+			<TabItem>
+				<TabItem.Header>
+					<Grid ColumnDefinitions="40, 150">
+						<Image Grid.Column="0" Width="40" Height="40" Source="/Assets/education.png"></Image>
+						<TextBlock TextAlignment="Center" Grid.Column="1">
+							Образование
+						</TextBlock>
+					</Grid>
+				</TabItem.Header>
+				<ItemsControl Items="{Binding Education}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type localM:CityEvent}">
+							<Grid Margin="75" Width="400" Height="300" RowDefinitions="100, 100">
+								<Image Grid.Row="0" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+								<StackPanel Grid.Row="1">
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Date}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Price}"/>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</TabItem>
+			<TabItem>
+				<TabItem.Header>
+					<Grid ColumnDefinitions="40, 150">
+						<Image Grid.Column="0" Width="40" Height="40" Source="/Assets/online.png"></Image>
+						<TextBlock TextAlignment="Center" Grid.Column="1">
+							Онлайн
+						</TextBlock>
+					</Grid>
+				</TabItem.Header>
+				<ItemsControl Items="{Binding Online}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type localM:CityEvent}">
+							<Grid Margin="75" Width="400" Height="300" RowDefinitions="100, 100">
+								<Image Grid.Row="0" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+								<StackPanel Grid.Row="1">
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Date}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Price}"/>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</TabItem>
+			<TabItem>
+				<TabItem.Header>
+					<Grid ColumnDefinitions="40, 150">
+						<Image Grid.Column="0" Width="40" Height="40" Source="/Assets/tuduz.png"></Image>
+						<TextBlock TextAlignment="Center" Grid.Column="1">
+							Шоу
+						</TextBlock>
+					</Grid>
+				</TabItem.Header>
+				<ItemsControl Items="{Binding Tuduz}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate DataType="{x:Type localM:CityEvent}">
+							<Grid Margin="75" Width="400" Height="300" RowDefinitions="100, 100">
+								<Image Grid.Row="0" Source="{Binding ImagePath, Converter={StaticResource variableImage}}" Height="100" Width="400"/>
+								<StackPanel Grid.Row="1">
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock Height="100" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding Header}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Date}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" TextWrapping="Wrap" Height="100" Text="{Binding Description}"/>
+									</Border>
+									<Border BorderBrush="Black" BorderThickness="2" CornerRadius="2">
+										<TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Text="{Binding Price}"/>
+									</Border>
+								</StackPanel>
+							</Grid>
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel/>
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</TabItem>
+		</TabControl>
+	</ScrollViewer>
+	<!--	<TabControl Items="{Binding All_Categories}">
+		<TabControl.ItemTemplate>
+			<DataTemplate>
+				<Grid ColumnDefinitions="40, 150">
+					<Image Grid.Column="0" Width="40" Height="40" Source="{Binding ImagePathq}"></Image>
+					<TextBlock Text="{Binding Headerq}" TextAlignment="Center" Grid.Column="1"/>
+				</Grid>
+			</DataTemplate>
+		</TabControl.ItemTemplate>
+
+		<TabControl.ContentTemplate>
+			<DataTemplate>
+				<ItemsControl Items="{Binding All_Events}">
+					
+				</ItemsControl>
+			</DataTemplate>
+		</TabControl.ContentTemplate>
+	</TabControl>
+	-->
+</Window>

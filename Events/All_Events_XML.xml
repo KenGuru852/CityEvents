@@ -1,0 +1,353 @@
+﻿<VeryAllEvents>
+	<CityEvent>
+		<Header>Сказка о потерянных деньгах</Header>
+		<Description>О событии: «Сказка о потерянных деньгах» Евгения Шварца знакома каждому с детства, её любят дети и родители, бабушки и дедушки.</Description>
+		<Image>../../Assets/MMM.png</Image>
+		<EventDate>19.03.2023</EventDate>
+		<Price>50 миллиардов долларов</Price>
+		<Category>
+			<CategoryItem>sport</CategoryItem>
+			<CategoryItem>culture</CategoryItem>
+		</Category>
+	</CityEvent>
+	<CityEvent>
+		<Header>Крошка Енот</Header>
+		<Description>В волшебном лесу, где светлячки, как фонарики, освещают дорогу, а зверята весело празднуют дни рождения, есть таинственное голубое озеро. И живёт в нём кто-то непонятный и пугающий... Стоит замахнуться на него палкой, и он машет палкой в ответ; начнёшь корчить ему рожицы, он тебе – ещё обиднее.</Description>
+		<Image>../../Assets/Kroshka.jpg</Image>
+		<EventDate>11.03.2023</EventDate>
+		<Price>250руб</Price>
+		<Category>
+			<CategoryItem>culture</CategoryItem>
+			<CategoryItem>adventures</CategoryItem>
+		</Category>
+	</CityEvent>
+	<CityEvent>
+		<Header>Сказка про Золушку</Header>
+		<Description>Спектакль «Сказка про Золушку» – история о мsadgljsakhdskhjdsajgkhdsaugysaduhgudsakhgjksdahgjdksahgjdashgjashgjsdahgjhsdajklghasdjghasdjhgjksdahglksadhgjsdahgkаленькой девочке, доброй, приветливой, милой, которую так невзлюбили мачеха и сестры. Бедную падчерицу заставляли трудиться с раннего утра до позднего вечера, а спать ей приходилось рядом с золой.</Description>
+		<Image>../../Assets/Zolushka.jpg</Image>
+		<EventDate>8.03.2023</EventDate>
+		<Price>400руб</Price>
+		<Category>
+			<CategoryItem>for_kids</CategoryItem>
+			<CategoryItem>sport</CategoryItem>
+		</Category>
+	</CityEvent>
+	<CityEvent>
+		<Header>Чебурашка</Header>
+		<Description>Забавный зверек Чебурашка случайно в ящике с апельсинами попадает в город, где находит верных друзей: крокодила Гену и девочку Галю с щенком Тобиком. Все вместе они строят Дом дружбы. Но вредная и злая старуха Шапокляк со своей крысой Лариской всеми способами пытается помешать им.</Description>
+		<Image>../../Assets/Chebur.jpg</Image>
+		<EventDate>19.03.2023</EventDate>
+		<Price>6 миллиардов руб</Price>
+		<Category>
+			<CategoryItem>life_hobby</CategoryItem>
+			<CategoryItem>adventures</CategoryItem>
+		</Category>
+	</CityEvent>
+	<CityEvent>
+		<Header>Три поросёнка</Header>
+		<Description>Динамичная постановка истории про трёх братцев-поросят, которые, как и все ребята, любят играть и веселиться. Но с приходом осенних холодов им нужно поработать — построить себе жилище.</Description>
+		<Image>../../Assets/ThreePigs.jpg</Image>
+		<EventDate>15.04.2023</EventDate>
+		<Price>400 руб</Price>
+		<Category>
+			<CategoryItem>life_hobby</CategoryItem>
+			<CategoryItem>tusa</CategoryItem>
+		</Category>
+	</CityEvent>
+	<CityEvent>
+		<Header>Приключения Буратино</Header>
+		<Description>Спектакль по мотивам известного произведения Алексея Толстого «Золотой ключик, или Приключения Буратино» (1936 г.), которое является литературной обработкой сказки «Приключения Пиноккио. История деревянной куклы» (1881 г.) итальянского автора Карло Коллоди.</Description>
+		<Image>../../Assets/LongNose.jpg</Image>
+		<EventDate>30.04.2023</EventDate>
+		<Price>350 руб</Price>
+		<Category>
+			<CategoryItem>tusa</CategoryItem>
+			<CategoryItem>education</CategoryItem>
+		</Category>
+	</CityEvent>
+	<CityEvent>
+		<Header>Спящая красавица</Header>
+		<Description>Это уникальный взгляд на классику современника, выдающегося мастера, умного и доброго человека. В своей постановке, используя язык танца, Дуато сумел создать чарующую атмосферу волшебства.</Description>
+		<Image>../../Assets/NightWoman.jpg</Image>
+		<EventDate>10.03.2023</EventDate>
+		<Price>86 руб</Price>
+		<Category>
+			<CategoryItem>education</CategoryItem>
+			<CategoryItem>online</CategoryItem>
+		</Category>
+	</CityEvent>
+	<CityEvent>
+		<Header>Снежная королева</Header>
+		<Description>Рекомендованный возраст: 3+ Отдельный билет для взрослого нужен независимо от возраста ребёнка Подарок в стоимость билета не входит</Description>
+		<Image>../../Assets/FrostWoman.jpg</Image>
+		<EventDate>26.08.2023</EventDate>
+		<Price>186 руб</Price>
+		<Category>
+			<CategoryItem>online</CategoryItem>
+			<CategoryItem>tuduz</CategoryItem>
+		</Category>
+	</CityEvent>
+	<CityEvent>
+		<Header>Бременские музыканты</Header>
+		<Description>На сцене новосибирского музыкального театра появилась новая современная версия любимого спектакля для семейного просмотра — музыкальная сказка «Бременские музыканты».</Description>
+		<Image>../../Assets/GermanClowns.png</Image>
+		<EventDate>21.04.2023</EventDate>
+		<Price>250 руб</Price>
+		<Category>
+			<CategoryItem>for_kids</CategoryItem>
+			<CategoryItem>tuduz</CategoryItem>
+		</Category>
+	</CityEvent>
+	<CityEvent>
+		<Header>Терем-теремок</Header>
+		<Description>Детство начинается в НОВАТе! Этот спектакль откроет малышам двери в удивительный, сказочный, невероятно красивый и полный приключений мир сказок и мир оперы. Маленьких зрителей ждет великое множество открытий и чудес!</Description>
+		<Image>../../Assets/DestroyMyHome.jpg</Image>
+		<EventDate>25.04.2023</EventDate>
+		<Price>450 руб</Price>
+		<Category>
+			<CategoryItem>online</CategoryItem>
+			<CategoryItem>education</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Влюбиться в Новосибисрк</Header>
+		<Description>Приглашаю вас на прогулку по Новосибирску! Мы с вами увидим главные достопримечательности, прогуляемся по центру и поговорим о том, как наш прекрасный город стал столицей Сибири. Я расскажу вам удивительные факты из истории, городские легенды и случаи из жизни местных, так что у вас не будет шансов не влюбиться в Новосибирск!</Description>
+		<Image>../../Assets/novo.jpg</Image>
+		<EventDate>13.13.2013</EventDate>
+		<Price>60000</Price>
+		<Category>
+			<CategoryItem>education</CategoryItem>
+			<CategoryItem>adventures</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Третье мероприятие</Header>
+		<Description>Описание для третьего мероприятия</Description>
+		<Image>../../Assets/3.png</Image>
+		<EventDate>3.03.2023</EventDate>
+		<Price>3000</Price>
+		<Category>
+			<CategoryItem>life_hobby</CategoryItem>
+			<CategoryItem>education</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Четвёртое мероприятие</Header>
+		<Description>Описание для четвёртого мероприятия</Description>
+		<Image>../../Assets/4.png</Image>
+		<EventDate>4.04.2024</EventDate>
+		<Price>4000</Price>
+		<Category>
+			<CategoryItem>tuduz</CategoryItem>
+			<CategoryItem>life_hobby</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Пятое мероприятие</Header>
+		<Description>Описание для пятого мероприятия</Description>
+		<Image>../../Assets/5.png</Image>
+		<EventDate>5.05.2025</EventDate>
+		<Price>5000</Price>
+		<Category>
+			<CategoryItem>online</CategoryItem>
+			<CategoryItem>culture</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Шестое мероприятие</Header>
+		<Description>Описание для шестого мероприятия</Description>
+		<Image>../../Assets/6.png</Image>
+		<EventDate>6.06.2026</EventDate>
+		<Price>6000</Price>
+		<Category>
+			<CategoryItem>sport</CategoryItem>
+			<CategoryItem>culture</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Седьмое мероприятие</Header>
+		<Description>Описание для седьмого мероприятия</Description>
+		<Image>../../Assets/7.png</Image>
+		<EventDate>7.07.2027</EventDate>
+		<Price>7000</Price>
+		<Category>
+			<CategoryItem>adventures</CategoryItem>
+			<CategoryItem>tuduz</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Восьмое мероприятие</Header>
+		<Description>Описание для восьмого мероприятия</Description>
+		<Image>../../Assets/8.png</Image>
+		<EventDate>8.08.2028</EventDate>
+		<Price>8000</Price>
+		<Category>
+			<CategoryItem>sport</CategoryItem>
+			<CategoryItem>for_kids</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Девятое мероприятие</Header>
+		<Description>Описание для девятого мероприятия</Description>
+		<Image>../../Assets/9.png</Image>
+		<EventDate>9.09.2029</EventDate>
+		<Price>9000</Price>
+		<Category>
+			<CategoryItem>tuduz</CategoryItem>
+			<CategoryItem>education</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Десятое мероприятие</Header>
+		<Description>Описание для десятого мероприятия</Description>
+		<Image>../../Assets/10.png</Image>
+		<EventDate>10.10.2010</EventDate>
+		<Price>10000</Price>
+		<Category>
+			<CategoryItem>adventures</CategoryItem>
+			<CategoryItem>life_hobby</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Одиннадцатое мероприятие</Header>
+		<Description>Описание для 11го мероприятия</Description>
+		<Image>../../Assets/11.png</Image>
+		<EventDate>11.11.2011</EventDate>
+		<Price>11000</Price>
+		<Category>
+			<CategoryItem>online</CategoryItem>
+			<CategoryItem>tusa</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Двенадцатое мероприятие</Header>
+		<Description>Описание для седьмого мероприятия</Description>
+		<Image>../../Assets/12.png</Image>
+		<EventDate>12.12.2012</EventDate>
+		<Price>12000</Price>
+		<Category>
+			<CategoryItem>education</CategoryItem>
+			<CategoryItem>online</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Тринадцатое мероприятия</Header>
+		<Description>Описание для тринадцатого мероприятия</Description>
+		<Image>../../Assets/13.png</Image>
+		<EventDate>13.13.2013</EventDate>
+		<Price>13000</Price>
+		<Category>
+			<CategoryItem>sport</CategoryItem>
+			<CategoryItem>adventures</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Четырнадцатое мероприятие</Header>
+		<Description>135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов135 символов</Description>
+		<Image>../../Assets/14.png</Image>
+		<EventDate>14.14.2014</EventDate>
+		<Price>14000</Price>
+		<Category>
+			<CategoryItem>online</CategoryItem>
+			<CategoryItem>for_kids</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Пятнадцатое мероприятие</Header>
+		<Description>Описание для пятнадцатого мероприятия</Description>
+		<Image>../../Assets/145.png</Image>
+		<EventDate>15.15.2015</EventDate>
+		<Price>15000</Price>
+		<Category>
+			<CategoryItem>tusa</CategoryItem>
+			<CategoryItem>culture</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Шестнадцатое мероприятие</Header>
+		<Description>Описание для шестнадцатого мероприятия</Description>
+		<Image>../../Assets/16.png</Image>
+		<EventDate>16.16.2016</EventDate>
+		<Price>16000</Price>
+		<Category>
+			<CategoryItem>for_kids</CategoryItem>
+			<CategoryItem>online</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Семнадцатое мероприятие</Header>
+		<Description>Описание для семнадцатого мероприятия</Description>
+		<Image>../../Assets/17.png</Image>
+		<EventDate>17.17.2017</EventDate>
+		<Price>17000</Price>
+		<Category>
+			<CategoryItem>adventures</CategoryItem>
+			<CategoryItem>culture</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Восемнадцатое мероприятие</Header>
+		<Description>Описание для 18го мероприятия</Description>
+		<Image>../../Assets/18.png</Image>
+		<EventDate>18.18.2018</EventDate>
+		<Price>18000</Price>
+		<Category>
+			<CategoryItem>sport</CategoryItem>
+			<CategoryItem>tuduz</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Девятнадцатое мероприятие</Header>
+		<Description>Описание для девятнадцатого мероприятия</Description>
+		<Image>../../Assets/19.png</Image>
+		<EventDate>19.19.2019</EventDate>
+		<Price>19000</Price>
+		<Category>
+			<CategoryItem>life_hobby</CategoryItem>
+			<CategoryItem>sport</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Двадцатое мероприятие</Header>
+		<Description>Описание для двадцатого мероприятия</Description>
+		<Image>../../Assets/20.png</Image>
+		<EventDate>20.20.2020</EventDate>
+		<Price>20000</Price>
+		<Category>
+			<CategoryItem>adventures</CategoryItem>
+			<CategoryItem>sport</CategoryItem>
+		</Category>
+	</CityEvent>
+
+	<CityEvent>
+		<Header>Двадцать первое мероприятие</Header>
+		<Description>Двадцать первое мероприятие</Description>
+		<Image>../../Assets/21.png</Image>
+		<EventDate>21.21.2021</EventDate>
+		<Price>21000</Price>
+		<Category>
+			<CategoryItem>online</CategoryItem>
+			<CategoryItem>adventures</CategoryItem>
+		</Category>
+	</CityEvent>
+
+</VeryAllEvents>
